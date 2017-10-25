@@ -4,7 +4,7 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider){
     $stateProvider
 		.state('home',{
 			url:'/home',
-			//templateUrl相对于index路径
+			//templateUrl相对于index路径++
 			templateUrl:'www/src/modules/home.html',
 			controller:'homeController',
 			controllerAs:'homeCtrl'
