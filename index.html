@@ -8,32 +8,39 @@
 <META http-equiv="Pragma" content="no-cache">
 <title translate='fums_management'></title>
 <link rel="stylesheet" type="text/css" href="www/src/css/common.css">
-	<link rel="stylesheet" type="text/css" href="www/src/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="www/src/font/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="www/lib/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
 	
 	<div class="container-fluid">
+		<div class="common-head">
+			<div class="pull-left col-md-2">
+				<img src="www/src/img/logo.png" alt="">
+			</div>
+			<span class="pull-left col-md-2 text-center head-title">内容管理系统</span>
+			<div class="pull-right  text-center">
+				<div class="language">
+					<a href="#" class="language-setting">语言设置
+						<div class="language-choose" >
+							<a href="">中文</a>
+							<a href="">英文</a>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
 		<div class="col-md-2">
 			<ul class="menu-list">
-				<li> <i class="fa fa-address-book"></i>点播管理</li>
-				<li><i class="fa fa-camera-retro fa-lg"></i> 分发管理</li>
-				<li>注入管理</li>
-				<li>基础数据</li>
-				<li>CP/SP</li>
-				<li>系统管理</li>
-				<li>状态监控</li>
-				<li>配置管理</li>
-				<li>告警管理</li>
-				<li>性能管理</li>
+				<li> <i class="fa fa-briefcase"></i>状态监控</li>
+				<li><i class="fa fa-camera-retro"></i> 网络参数配置</li>
+				<li><i class="fa fa-database" aria-hidden="true"></i>告警管理</li>
+				<li><i class="fa fa-hashtag" aria-hidden="true"></i>性能管理</li>
+				<li><i class="fa fa-graduation-cap" aria-hidden="true"></i>内容管理</li>
+				<li><i class="fa fa-shopping-bag" aria-hidden="true"></i>系统管理</li>
 			</ul>
 		</div>
-		<!--<div class="list-group">-->
-			<!--<a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>-->
-			<!--<a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>-->
-			<!--<a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>-->
-			<!--<a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>-->
-		<!--</div>-->
+
 		<div ui-view class="col-md-10"></div>
 	
 	</div>
