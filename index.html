@@ -11,48 +11,49 @@
 	<link rel="stylesheet" type="text/css" href="www/src/font/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="www/lib/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body ng-controller="indexCtrl">
 	
 	<div class="container-fluid">
 		<div class="common-head">
 			<div class="pull-left col-md-2">
 				<img src="www/src/img/logo.png" alt="">
 			</div>
-			<span class="pull-left col-md-2 text-center head-title">内容管理系统</span>
+			<span class="pull-left text-center head-title">{{1000|translate}}</span>
 			<div class="pull-right  text-center">
-				<div class="language">
-					<a href="#" class="language-setting">语言设置
-						<div class="language-choose" >
-							<a href="">中文</a>
-							<a href="">英文</a>
-						</div>
-					</a>
-				</div>
+				<a href="#" class="language-setting" ng-click="flag=!flag">{{1001|translate}}
+					<ul class="language-choose" ng-show="flag">
+						<li ng-click="switchLanguage('cn')">中文</li>
+						<li ng-click="switchLanguage('en')">English</li>
+					</ul>
+				</a>
 			</div>
 		</div>
 		<div class="col-md-2">
 			<ul class="menu-list">
-				<li> <i class="fa fa-briefcase"></i>状态监控</li>
-				<li><i class="fa fa-camera-retro"></i> 网络参数配置</li>
-				<li><i class="fa fa-database" aria-hidden="true"></i>告警管理</li>
-				<li><i class="fa fa-hashtag" aria-hidden="true"></i>性能管理</li>
-				<li><i class="fa fa-graduation-cap" aria-hidden="true"></i>内容管理</li>
-				<li><i class="fa fa-shopping-bag" aria-hidden="true"></i>系统管理</li>
+				<li> <i class="fa fa-briefcase"></i>{{1002|translate}}</li>
+				<li><i class="fa fa-camera-retro"></i> {{1003|translate}}</li>
+				<li><i class="fa fa-database" aria-hidden="true"></i>{{1004|translate}}</li>
+				<li><i class="fa fa-hashtag" aria-hidden="true"></i>{{1005|translate}}</li>
+				<li><i class="fa fa-graduation-cap" aria-hidden="true"></i>{{1006|translate}}</li>
+				<li><i class="fa fa-shopping-bag" aria-hidden="true"></i>{{1007|translate}}</li>
 			</ul>
+
 		</div>
-
 		<div ui-view class="col-md-10"></div>
-	
 	</div>
-	
 
-	
 	<script type="text/javascript" src="www/lib/angular/angular.js"></script>
 	<script type="text/javascript" src="www/lib/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="www/lib/angular-translate/angular-translate.js"></script>
+	<script src="www/lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
 	<script type="text/javascript" src="www/lib/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="www/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="www/src/js/app.js"></script>
 	<script type="text/javascript" src="www/src/js/config.js"></script>
+	<script type="text/javascript" src="www/src/js/filter.js"></script>
+	<script type="text/javascript" src="www/src/js/factory.js"></script>
+	<script type="text/javascript" src="www/src/js/service.js"></script>
+	<script type="text/javascript" src="www/src/js/indexCtrl.js"></script>
 	<script type="text/javascript" src="www/src/modules/homeController.js"></script>
 	<script type="text/javascript" src="www/src/modules/listController.js"></script>
 </body>

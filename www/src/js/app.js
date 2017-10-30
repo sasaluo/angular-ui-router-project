@@ -1,1 +1,1 @@
-angular.module('myApp',['ui.router']);
+angular.module('myApp',['ui.router','pascalprecht.translate']);

@@ -1,5 +1,12 @@
 
-angular.module('myApp').config(function($stateProvider,$urlRouterProvider){
+angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$translateProvider){
+		var lang = window.localStorage.lang ||'cn';
+    $translateProvider.preferredLanguage(lang);
+    $translateProvider.useStaticFilesLoader({
+		prefix:'www/src/i18/',
+		suffix:'.json'
+	});
+
 	$urlRouterProvider.otherwise("/home");
     $stateProvider
 		.state('home',{

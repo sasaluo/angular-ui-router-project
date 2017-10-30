@@ -24,16 +24,26 @@ a:hover{text-decoration:none;}
 .clearfix:before, 
 .clearfix:after { content:""; display:table; }
 .clearfix:after { clear:both; }
-.clearfix{ zoom:1; } 
+.clearfix{ zoom:1; }
+i{font-style:normal}
+
+/*自定义公共样式*/
+.float-left{float:left}
 
 /*index.html样式*/
 .common-head{ background: #3681ba !important; height: 60px;line-height:60px;color:#fff}
 .head-title{font-size:20px!important}
-.language{background: #2f72a5;width:100px}
-.language-choose{display:none;background:red;}
-.language-setting:hover .language-choose{display:block;background:#333}
+
+.language-setting{display:block;width:100px;height:60px;line-height:60px;color:#fff;position:relative}
+.language-setting:hover{text-decoration: none;color:#fff}
+.language-choose{position:absolute;top: 60px;left: 0; width: 100px;color: #222;z-index:100}
+.language-choose li{height:40px;line-height:40px}
+/*.language-setting:hover .language-choose{display:block;background:#e4e4e4;color:#222}*/
+
 .language-choose a{display:block}
 .menu-list{width:220px;border:1px solid #ddd}
 .menu-list li{height:38px;line-height: 38px;font-size: 16px;border-bottom:1px solid #ddd}
 .menu-list li:hover{color: #3681ba}
 .menu-list li i{padding:5px 10px}
+
+.feature-nav{height:40px;line-height:40px;font-size:16px}

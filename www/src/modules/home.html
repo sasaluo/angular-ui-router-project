@@ -1,4 +1,26 @@
 <div>
-	<!-- <h2 ng-click="gotoList()">i am home page</h2>
-	<div>my name is {{name}}</div> -->
+	 <div class="col-md-12">
+		 <div ng-repeat="item in homeCtrl.featureList" class="col-md-2 text-center feature-nav">{{item.name}}</div>
+	 </div>
+	<div class="col-md-12">
+		<span class="float-left">
+			时间
+			<select name="" id="" ng-options="i.id as i.name for i in homeCtrl.timeList"
+					ng-model="homeCtrl.params.time"
+					ng-change="homeCtrl.changeTime(homeCtrl.params.time)"
+			></select>
+		</span>
+		<span class="col-md-2">
+			<i>从</i>
+			<input type="text" style="width: 150px;" ng-model="homeCtrl.params.startTime">
+		</span>
+		<span class="col-md-2">
+			<i>到</i>
+			<input type="text" style="width: 150px;" ng-model="homeCtrl.params.endTime">
+		</span>
+		<div class="btn btn-primary" ng-click="homeCtrl.queryResult()">
+			查询
+		</div>
+	</div>
+
 </div>
