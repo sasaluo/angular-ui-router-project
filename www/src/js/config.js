@@ -1,6 +1,6 @@
 
 angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$translateProvider){
-		var lang = window.localStorage.lang ||'cn';
+		var lang = window.localStorage.lang ||'zh-cn';
     $translateProvider.preferredLanguage(lang);
     $translateProvider.useStaticFilesLoader({
 		prefix:'www/src/i18/',

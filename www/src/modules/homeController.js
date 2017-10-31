@@ -1,5 +1,6 @@
 angular.module('myApp')
 .controller('homeController',function($scope,$state,i18,timeService){
+    // $scope.datas={};
     var vm = this;
     vm.changeTime = changeTime;
     vm.queryResult = queryResult;
@@ -28,5 +29,27 @@ angular.module('myApp')
     function queryResult(){
         console.log(vm.params)
     }
-    // $scope.name=i18.i18("1002")
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
