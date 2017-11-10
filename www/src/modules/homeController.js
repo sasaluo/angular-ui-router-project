@@ -21,6 +21,51 @@ angular.module('myApp')
         {'id':2,'name':'1月'},
         {'id':3,'name':'其他'}
     ];
+    vm.list = [
+        {
+
+        },
+        {
+            "time":"2017-08-14",
+            "name":"LCM",
+            "cpuAve":"60%",
+            "cpuHigh":"78%",
+            "radioAve":"54%",
+            "radioHigh":"39",
+            "hardTotal":"31",
+        }
+    ];
+    $scope.pageOption = {
+        pageSize:8,
+        pageIndex:1,
+        total:0,
+        maxPage:0
+    }
+
+
+    console.log($scope.pageOption)
+    // console.log(vm.list)
+    $scope.list = [];
+
+    $scope.getData = function(n){
+        for(var i=0;i<n;i++){
+            $scope.list.push({
+                "time":"2017-08-14",
+                "name":"LCM",
+                "cpuAve":"60%",
+                "cpuHigh":"78%",
+                "radioAve":"54%",
+                "radioHigh":"39",
+                "hardTotal":"31",
+            })
+        };
+        $scope.pageOption.total = $scope.list.length;
+        $scope.pageOption.maxPage = ($scope.pageOption.total)/($scope.pageOption.pageSize)
+
+        console.log($scope.pageOption)
+    }
+
+    $scope.getData(20);
 
     function changeTime(time){
         console.log(time)

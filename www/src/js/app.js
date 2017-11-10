@@ -1,1 +1,1 @@
-angular.module('myApp',['ui.router','pascalprecht.translate']);
+angular.module('myApp',['ui.router','pascalprecht.translate','ngFileUpload']);

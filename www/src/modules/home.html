@@ -26,8 +26,31 @@
 		</div>
 	</div>
 
-
-
-
-
+	<section >
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th width="10%">时间</th>
+					<th width="15%">主机名称</th>
+					<th width="15%">CPU平均使用率</th>
+					<th width="15%">CPU使用峰值</th>
+					<th width="15%">内存使用率</th>
+					<th width="15%">内存使用率峰值</th>
+					<th width="15%">硬盘总量</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in list">
+					<td width="10%">{{item.time}}</td>
+					<td  width="15%">{{item.name}}</td>
+					<td  width="15%">{{item.cpuAve}}</td>
+					<td  width="15%">{{item.cpuHigh}}</td>
+					<td  width="15%">{{item.radioAve}}</td>
+					<td  width="15%">{{item.radioHigh}}</td>
+					<td  width="15%">{{item.hardTotal}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<at-pagination option = "pageOption"></at-pagination>
+	</section>
 </div>

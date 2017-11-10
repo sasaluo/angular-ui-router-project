@@ -2,10 +2,11 @@ angular.module('myApp').directive('timePicker',function($rootScope){
     return{
         restrict: 'A',
         require: 'ngModel',
-	        scope: {
-	            minDate: '@',
-	        },
+        scope: {
+            option1: '='
+        },
         link: function (scope, element, attr, ngModel) {
+
             //讲scope里面的值赋给指令里面的元素
             element.val(ngModel.$viewValue);
 
