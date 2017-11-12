@@ -3,7 +3,7 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 		var lang = window.localStorage.lang ||'zh-cn';
     $translateProvider.preferredLanguage(lang);
     $translateProvider.useStaticFilesLoader({
-		prefix:'www/src/i18/',
+		prefix:'i18/',
 		suffix:'.json'
 	});
 
@@ -12,13 +12,13 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 		.state('home',{
 			url:'/home',
 			//templateUrl相对于index路径++
-			templateUrl:'www/src/modules/home.html',
+			templateUrl:'modules/home.html',
 			controller:'homeController',
 			controllerAs:'homeCtrl'
 		})
 		.state('list',{
 			url:'/list',
-			templateUrl:'www/src/modules/list.html',
+			templateUrl:'modules/list.html',
 			controller:'listController',
 			controllerAs:'listCtrl'
 		})

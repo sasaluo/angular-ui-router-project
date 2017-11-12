@@ -42,7 +42,7 @@ i{font-style:normal}
 /*.language-setting:hover .language-choose{display:block;background:#e4e4e4;color:#222}*/
 
 .language-choose a{display:block}
-.menu-list{width:220px;border:1px solid #ddd}
+.menu-list{border:1px solid #ddd}
 .menu-list li{height:38px;line-height: 38px;font-size: 16px;border-bottom:1px solid #ddd}
 .menu-list li:hover{color: #3681ba}
 .menu-list li i{padding:5px 10px}
@@ -53,3 +53,24 @@ table th,table td{text-align:center}
 /*指令样式*/
 .page-content{height:40px;line-height: 40px}
 .page-content .currentPage{width:28px;height:28px;text-align:center}
+
+.radius{border-radius: 2px}
+.flex{
+    display: box;
+    display: box;
+    display: flexbox;
+    display: flex;
+    display: flex;
+    display: flex;
+}
+.mdChild-flex{
+    
+    flex:4
+}
+.after-left-border:before {
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	transform: scaleX(0.2);
+}

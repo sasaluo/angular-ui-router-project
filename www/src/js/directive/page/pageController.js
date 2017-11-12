@@ -7,7 +7,7 @@ angular.module('myApp').directive('atPagination',function($rootScope){
             getData:"&"//绑定副作用域里面的方法
 
         },
-        templateUrl:'www/src/js/directive/page/page.html',
+        templateUrl:'js/directive/page/page.html',
         link: function ($scope, element, attr) {
 
             console.log($scope.option)
