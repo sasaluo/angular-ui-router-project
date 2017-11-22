@@ -1,8 +1,11 @@
 angular.module('myApp')
-    .controller('indexCtrl',function($scope,$state,$translate,i18,$rootScope){
+    .controller('indexCtrl',function($scope,$state,$translate,i18,$rootScope,menuList){
         $scope.switchLanguage = switchLanguage;
         $scope.flag = false;
         $scope.cur_lang = $translate.use();
+
+        $scope.menuList = menuList.menulist;
+        console.log($scope.menuList)
 
         function switchLanguage(lang){
             $scope.flag =  !$scope.flag;
@@ -26,6 +29,10 @@ angular.module('myApp')
             }else if(lang =='zh-en'){
                 WdatePicker({lang:'en'})
             }
+        }
+
+        $scope.goCurrent = function(){
+            $state.go('warning.current')
         }
 
     })

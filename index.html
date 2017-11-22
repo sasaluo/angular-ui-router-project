@@ -19,6 +19,15 @@
 				<img src="www/src/img/logo.png" alt="">
 			</div>
 			<span class="pull-left text-center head-title">{{1000|translate}}</span>
+			<div class="pull-left">
+				<ul class="menu-list col-md-12 flex-wrap index-head-title">
+					<li class="flex text-center" ng-repeat="item in menuList">
+						<a ui-sref="{{item.name}}" style="color:#fff">{{item.firstMenu}}</a></li>
+				</ul>
+			</div>
+			<div class="pull-right  text-center" ng-click="goCurrent()">
+				当前告警
+			</div>
 			<div class="pull-right  text-center">
 				<a href="#" class="language-setting" ng-click="flag=!flag">{{1001|translate}}
 					<ul class="language-choose" ng-show="flag">
@@ -28,18 +37,18 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-md-2">
-			<ul class="menu-list">
-				<li> <i class="fa fa-briefcase"></i>{{1002|translate}}</li>
-				<li><i class="fa fa-camera-retro"></i> {{1003|translate}}</li>
-				<li><i class="fa fa-database" aria-hidden="true"></i>{{1004|translate}}</li>
-				<li><i class="fa fa-hashtag" aria-hidden="true"></i>{{1005|translate}}</li>
-				<li><i class="fa fa-graduation-cap" aria-hidden="true"></i>{{1006|translate}}</li>
-				<li><i class="fa fa-shopping-bag" aria-hidden="true"></i>{{1007|translate}}</li>
-			</ul>
-
-		</div>
-		<div ui-view class="col-md-10"></div>
+		<div ui-view ></div>
+		<!-- <div style="position: absolute;top: 100px;left: 15px;right: 15px;bottom: 0;">
+			<div class="col-md-2 text-center" >
+				<ul class="col-md-12">
+					<li class="flex" ng-repeat="item in subMenu" style="height:40px;line-height:40px">
+						<a href="">{{item.name}}</a>
+					</li>
+				</ul>
+			</div>
+			<div ui-view class="col-md-10"></div>
+		</div> -->
+		
 	</div>
 
 	<script type="text/javascript" src="www/lib/angular/angular.js"></script>
@@ -55,9 +64,12 @@
 	<script type="text/javascript" src="www/src/js/filter.js"></script>
 	<script type="text/javascript" src="www/src/js/factory.js"></script>
 	<script type="text/javascript" src="www/src/js/service.js"></script>
+	<script type="text/javascript" src="www/src/js/constant.js"></script>
 
-
-	<script type="text/javascript" src="www/src/modules/homeController.js"></script>
+	<script type="text/javascript" src="www/src/modules/home/homeController.js"></script>
+	<script type="text/javascript" src="www/src/modules/changemodeController.js"></script>
+	<script type="text/javascript" src="www/src/modules/queryController.js"></script>
+	<script type="text/javascript" src="www/src/modules/currentController.js"></script>
 	<script type="text/javascript" src="www/src/modules/listController.js"></script>
 
 	<script src="www/lib/My97DatePicker/WdatePicker.js"></script>

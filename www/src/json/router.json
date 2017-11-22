@@ -1,0 +1,146 @@
+[
+  {
+    "firstMenu":"warning",
+    "secondMenu":[
+      {
+        "name":"当前告警管理",
+        "thirdMenu":[
+          {"name":"当前告警查询"}
+        ]
+
+      },
+      {
+        "name":"历史告警管理",
+        "thirdMenu":[
+          {"name": "历史告警查询"}
+        ]
+
+      },
+      {
+        "name":"告警统计",
+        "thirdMenu":[
+          {"name": "告警实体统计"},
+          {"name": "告警级别统计"}
+        ]
+      },
+      {
+        "name":"告警配置",
+        "thirdMenu":[
+          {"name": "告警门限配置"},
+          {"name": "告警专家库"},
+          {"name": "告警通知设置"},
+          {"name": "告警过滤设置"},
+          {"name": "告警屏蔽设置"}
+        ]
+      }
+    ]
+  },
+  {
+    "firstMenu":"feature",
+    "secondMenu":[
+      {
+        "name":"性能1",
+        "thirdMenu":[
+          {"name":"当前告警查询"}
+        ]
+
+      },
+      {
+        "name":"性能2",
+        "thirdMenu":[
+          {"name": "历史告警查询"}
+        ]
+
+      },
+      {
+        "name":"性能3",
+        "thirdMenu":[
+          {"name": "告警实体统计"},
+          {"name": "告警级别统计"}
+        ]
+      },
+      {
+        "name":"性能4",
+        "thirdMenu":[
+          {"name": "告警门限配置"},
+          {"name": "告警专家库"},
+          {"name": "告警通知设置"},
+          {"name": "告警过滤设置"},
+          {"name": "告警屏蔽设置"}
+        ]
+      }
+    ]
+  },
+  {
+    "firstMenu":"security",
+    "secondMenu":[
+      {
+        "name":"安全1",
+        "thirdMenu":[
+          {"name":"当前告警查询"}
+        ]
+
+      },
+      {
+        "name":"安全2",
+        "thirdMenu":[
+          {"name": "历史告警查询"}
+        ]
+
+      },
+      {
+        "name":"安全3",
+        "thirdMenu":[
+          {"name": "告警实体统计"},
+          {"name": "告警级别统计"}
+        ]
+      },
+      {
+        "name":"安全4",
+        "thirdMenu":[
+          {"name": "告警门限配置"},
+          {"name": "告警专家库"},
+          {"name": "告警通知设置"},
+          {"name": "告警过滤设置"},
+          {"name": "告警屏蔽设置"}
+        ]
+      }
+    ]
+  },
+  {
+    "firstMenu":"status",
+    "secondMenu":[
+      {
+        "name":"状态1",
+        "thirdMenu":[
+          {"name":"当前告警查询"}
+        ]
+
+      },
+      {
+        "name":"状态2",
+        "thirdMenu":[
+          {"name": "历史告警查询"}
+        ]
+
+      },
+      {
+        "name":"告警统计",
+        "thirdMenu":[
+          {"name": "告警实体统计"},
+          {"name": "告警级别统计"}
+        ]
+      },
+      {
+        "name":"状态3",
+        "thirdMenu":[
+          {"name": "告警门限配置"},
+          {"name": "告警专家库"},
+          {"name": "告警通知设置"},
+          {"name": "告警过滤设置"},
+          {"name": "告警屏蔽设置"}
+        ]
+      }
+    ]
+  }
+]

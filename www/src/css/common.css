@@ -42,9 +42,8 @@ i{font-style:normal}
 /*.language-setting:hover .language-choose{display:block;background:#e4e4e4;color:#222}*/
 
 .language-choose a{display:block}
-.menu-list{width:220px;border:1px solid #ddd}
-.menu-list li{height:38px;line-height: 38px;font-size: 16px;border-bottom:1px solid #ddd}
-.menu-list li:hover{color: #3681ba}
+.menu-list{height:60px;}
+.menu-list li{height:100%;font-size: 16px;padding:0 20px;}
 .menu-list li i{padding:5px 10px}
 
 .feature-nav{height:40px;line-height:40px;font-size:16px}
@@ -53,3 +52,19 @@ table th,table td{text-align:center}
 /*指令样式*/
 .page-content{height:40px;line-height: 40px}
 .page-content .currentPage{width:28px;height:28px;text-align:center}
+
+.flex-wrap{display:flex}
+.flex{flex:1}
+
+ 
+
+
+
+
+
+
+
+
+
+
+

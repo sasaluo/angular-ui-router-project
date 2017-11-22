@@ -1,0 +1,81 @@
+<div style="position: absolute;top: 100px;left: 15px;right: 15px;bottom: 0;">
+	<div>
+		<div class="col-md-2 text-center" >
+			<ul class="col-md-12">
+				<li class="flex" ng-repeat="item in items" style="height:40px;line-height:40px">
+					{{item.name}}
+				</li>
+			</ul>
+			</div>
+		<div ui-view class="col-md-10"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div>-->
+	 <!--<div class="col-md-12">-->
+		 <!--<div ng-repeat="item in homeCtrl.featureList" class="col-md-2 text-center feature-nav">{{item.name}}</div>-->
+	 <!--</div>-->
+	<!--<div class="col-md-12">-->
+		<!--<span class="float-left">-->
+			<!--时间-->
+			<!--<select name="" id="" ng-options="i.id as i.name for i in homeCtrl.timeList"-->
+					<!--ng-model="homeCtrl.params.time"-->
+					<!--ng-change="homeCtrl.changeTime(homeCtrl.params.time)"-->
+			<!--&gt;</select>-->
+		<!--</span>-->
+		<!--<span class="float-left">-->
+			<!--<i>从</i>-->
+			<!--<input type="text" style="width: 150px;" ng-model="homeCtrl.params.startTime" time-picker>-->
+			<!--<img onclick="WdatePicker({el:$dp.$('d12')})" src="www/lib/My97DatePicker/skin/datePicker.gif" width="16" height="22" align="absmiddle">-->
+		<!--</span>-->
+		<!--<span class="float-left">-->
+			<!--<i>到</i>-->
+			<!--<input type="text" style="width: 150px;" ng-model="homeCtrl.params.endTime" time-picker>-->
+			<!--<img onclick="WdatePicker({el:$dp.$('d12')})" src="www/lib/My97DatePicker/skin/datePicker.gif" width="16" height="22" align="absmiddle">-->
+		<!--</span>-->
+		<!--<span ng-show="homeCtrl.params.startTime>homeCtrl.params.endTime" style="color:red">开始日期不能大于结束日期</span>-->
+		<!--<div class="btn btn-primary" ng-click="homeCtrl.queryResult()">-->
+			<!--查询-->
+		<!--</div>-->
+	<!--</div>-->
+
+	<!--<section >-->
+		<!--<table class="table table-bordered">-->
+			<!--<thead>-->
+				<!--<tr>-->
+					<!--<th width="10%">时间</th>-->
+					<!--<th width="15%">主机名称</th>-->
+					<!--<th width="15%">CPU平均使用率</th>-->
+					<!--<th width="15%">CPU使用峰值</th>-->
+					<!--<th width="15%">内存使用率</th>-->
+					<!--<th width="15%">内存使用率峰值</th>-->
+					<!--<th width="15%">硬盘总量</th>-->
+				<!--</tr>-->
+			<!--</thead>-->
+			<!--<tbody>-->
+				<!--<tr ng-repeat="item in list">-->
+					<!--<td width="10%">{{item.time}}</td>-->
+					<!--<td  width="15%">{{item.name}}</td>-->
+					<!--<td  width="15%">{{item.cpuAve}}</td>-->
+					<!--<td  width="15%">{{item.cpuHigh}}</td>-->
+					<!--<td  width="15%">{{item.radioAve}}</td>-->
+					<!--<td  width="15%">{{item.radioHigh}}</td>-->
+					<!--<td  width="15%">{{item.hardTotal}}</td>-->
+				<!--</tr>-->
+			<!--</tbody>-->
+		<!--</table>-->
+		<!--<at-pagination option = "pageOption"></at-pagination>-->
+	<!--</section>-->
+<!--</div>-->
