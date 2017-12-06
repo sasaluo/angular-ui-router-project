@@ -13,12 +13,12 @@
 		<span class="float-left">
 			<i>从</i>
 			<input type="text" style="width: 150px;" ng-model="homeCtrl.params.startTime" time-picker>
-			<img onclick="WdatePicker({el:$dp.$('d12')})" src="www/lib/My97DatePicker/skin/datePicker.gif" width="16" height="22" align="absmiddle">
+			<img onclick="WdatePicker({el:$dp.$('d12')})" src="../lib/My97DatePicker/skin/datePicker.gif" width="16" height="22" align="absmiddle">
 		</span>
 		<span class="float-left">
 			<i>到</i>
 			<input type="text" style="width: 150px;" ng-model="homeCtrl.params.endTime" time-picker>
-			<img onclick="WdatePicker({el:$dp.$('d12')})" src="www/lib/My97DatePicker/skin/datePicker.gif" width="16" height="22" align="absmiddle">
+			<!--<img onclick="WdatePicker({el:$dp.$('d12')})" src="www/lib/My97DatePicker/skin/datePicker.gif" width="16" height="22" align="absmiddle">-->
 		</span>
 		<span ng-show="homeCtrl.params.startTime>homeCtrl.params.endTime" style="color:red">开始日期不能大于结束日期</span>
 		<div class="btn btn-primary" ng-click="homeCtrl.queryResult()">

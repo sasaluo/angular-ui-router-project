@@ -9,8 +9,10 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 			suffix:'.json'
 		});
 
+
 	$urlRouterProvider.otherwise("/config/network");
     $stateProvider
+
 		.state('config',{
 			url:'/config',
 			templateUrl:'www/src/modules/template.html',
