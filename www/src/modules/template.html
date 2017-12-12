@@ -1,7 +1,7 @@
- <div style="position: absolute;top: 60px;left: 15px;right: 15px;bottom: 0;">
+ <div class="view-wrap">
 	<div class="col-md-2 text-center" >
 		<ul class="col-md-12">
-			<li class="flex" ng-repeat="item in secondMenuList">
+			<li  ng-repeat="item in secondMenuList">
 				<a href="" style="display: block;height: 40px;line-height: 40px;">{{item.name}}</a>
 				<ul>
 					<li ng-repeat="i in item.thirdMenu"><a ui-sref=".{{i.url}}" style="color:#333">{{i.name}}</a></li>
@@ -10,4 +10,5 @@
 		</ul>
 	</div>
 	<div ui-view class="col-md-10"></div>
-</div> 
+</div>
+

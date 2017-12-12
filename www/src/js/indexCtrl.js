@@ -31,8 +31,6 @@ angular.module('myApp')
             }
         }
 
-        $scope.goCurrent = function(){
-            $state.go('warning.current')
-        }
+
 
     })

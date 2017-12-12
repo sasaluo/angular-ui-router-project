@@ -13,26 +13,27 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 	$urlRouterProvider.otherwise("/config/network");
     $stateProvider
 
+
 		.state('config',{
 			url:'/config',
 			templateUrl:'www/src/modules/template.html',
 			controller:function($scope){
-				$scope.secondMenuList = getSecondName('config');						 
-			}				
+				 $scope.secondMenuList = getSecondName('config');
+			}
 		})
 		.state('config.network',{
 			url:'/network',
-			templateUrl:'www/src/modules/home.html',
+			templateUrl:'www/src/modules/config/netWork/home.html',
 			controller:"homeController"
 		})
 		.state('config.changemode',{
 			url:'/changemode',
-			templateUrl:'www/src/modules/changemode.html',
+			templateUrl:'modules/changemode.html',
 			controller:"changemodeController"
 		})
 		.state('config.query',{
 			url:'/query',
-			templateUrl:'www/src/modules/query.html',
+			templateUrl:'modules/query.html',
 			controller:"queryController"
 		})
 
@@ -40,8 +41,7 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 		.state('warning',{
 			url:'/warning',
 			//templateUrl相对于index路径++
-			templateUrl:'www/src/modules/template.html',
-			// resolve:{ secondMenu:"menuList"},
+			templateUrl:'modules/template.html',
 			controller: function($scope){
 				$scope.secondMenuList = getSecondName('warning');
 				console.log($scope.secondMenuList)
@@ -50,7 +50,7 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 		})
 		.state('warning.current',{
 			url:'/current',
-			templateUrl:'www/src/modules/current.html',
+			templateUrl:'modules/current.html',
 			controller:"currentController"
 		})
 
@@ -61,6 +61,6 @@ angular.module('myApp').config(function($stateProvider,$urlRouterProvider,$trans
 						return menuList[i].secondMenu
 					}
 				}
-			}				 
-		}; 
+			}
+		};
 })

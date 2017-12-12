@@ -59,6 +59,14 @@ table th,table td{text-align:center}
 .flex-wrap{display:flex}
 .flex{flex:1}
 
+.view-wrap{
+	position: absolute;
+	top: 60px;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+}
+
  
 
 

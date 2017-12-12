@@ -1,6 +1,7 @@
 angular.module('myApp').constant('menuList',{
 	menulist:[
         {	'name':'config',
+			'url':'config/network',
         	'firstMenu':'配置管理',
         	'secondMenu':[
             	{
@@ -18,16 +19,16 @@ angular.module('myApp').constant('menuList',{
             	}]
     	},
         {
-          'name':'warning',
-          'firstMenu':'告警管理',
-          'secondMenu':[
-            {	'name':'告警管理',
-            	'thirdMenu':[
-                	{'url':'current','name':'当前告警查询'},
-                	{'name':'历史告警查询'}
-            	]
-        	}]
+          	'name':'warning',
+			'url':'warning/current',
+			'firstMenu':'告警管理',
+          	'secondMenu':[
+				{	'name':'告警管理',
+					'thirdMenu':[
+						{'url':'current','name':'当前告警查询'},
+						{'name':'历史告警查询'}
+					]
+				}]
         }
-    ],
-    name:'sasa'
+    ]
 })
